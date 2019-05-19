@@ -1,6 +1,6 @@
 import { ReduxLayoutTutorialAppPage } from './app.po';
 
-describe('redux-layout-tutorial-app App', () => {
+describe('notepad-app App', () => {
   let page: ReduxLayoutTutorialAppPage;
 
   beforeEach(() => {

@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "name": "redux-layout-tutorial-app",
+    "name": "notepad-app",
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
