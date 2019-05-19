@@ -1,0 +1,49 @@
+.right-sidebar {
+  transition: width 0.3s;
+  height: 100%;
+  position: fixed;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.left-sidebar{
+  transition: width 1s;
+  height: 100%;
+  position: fixed;
+  border-right: 1px solid black;
+}
+
+.search-box {
+  border-radius: 0;
+}
+
+.note-bar{
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.text-area-style{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.right-sidebar{
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  right: 0;
+  z-index: 999 !important;
+  background:#212121;
+
+}
+
+.highlighted {
+  border-left: 5px solid black;
+  display: block;
+  width: 100%
+}
+
+
+
+

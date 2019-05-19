@@ -1,0 +1,18 @@
+<section sidebarWatch class="left-sidebar">
+    <input type="text"
+        [(ngModel)]="this.searchText"
+        class="form-control search-box"
+        placeholder="Search"
+        (input)="searchNotes()"
+    />
+
+    <short-note
+        *ngFor="let note of this.displayNotes; let i = index;"
+        [noteTitle]="note.title"
+        [noteContent]="note.noteContent"
+        (click)="selectNote(i,note)"
+        [class.highlighted]="note.noteId === this.selectedNote.noteId"
+    >
+    </short-note>
+
+</section>

@@ -1,0 +1,47 @@
+<left-sidebar></left-sidebar>
+
+
+
+<div id="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+
+          <div class="row margin-bottom20">
+                  
+            <div class="col-12 col-sm-6 ">
+                <button type="button" title="Toggle Sidebar" class="btn " (click)="toggleSidebar()" >&#9776;</button>
+                <button type="button" title="New Note" class="btn btn-primary" (click)="createNewNote()">
+                  <span class="fa fa-plus"></span>
+                </button>
+                <button class="btn btn-success" title="Save" type="submit" [disabled]="!noteForm.valid">
+                    <span class="fa fa-floppy-o"></span>
+                </button>
+                <button type="button" title="Delete" class="btn btn-danger" (click)="deleteNote()">
+                    <span class="fa fa-trash-o"></span>
+                </button>
+            </div>
+
+            <div class="col-12 col-sm-6 d-none d-sm-block">
+                <h4 style="float:right">The Notepad App</h4>
+              </div>
+                  
+          </div>
+            
+          <div class="row">
+              <div class="col-md-12">
+                  <input type="text" class="form-control input-class" formControlName="title" placeholder="Title" >
+                </div>
+                <div class="col-md-12">
+                  <textarea rows="20" formControlName="noteContent" class="form-control input-class" placeholder="Start your note here..." >
+                  </textarea>
+                </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
